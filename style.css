@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+@import url(fontes/SuperMario256.ttf);
+
+@import url(fontes/Super\ Mario\ Bros.\ 2.ttf);
+
+@font-face {
+    font-family: 'super-mario-title';
+    src: url(fontes/SuperMario256.ttf) format('opentype');
+    font-weight: normal;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --cor1: #F20544;
+    --cor2: #2B76D9;
+    --cor3: #04D939;
+    --cor4: #7ABF49;
+    --cor5: #F2CB05;
+}
+
+body{
+    background-color: var(--cor4);
+}
+
+p{
+    text-align: justify;
+    text-indent: 15px;
+    padding: 10px 20px 10px 20px;
+    line-height: 25px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+}
+
+img#primeira-imagem{
+    display: block;
+    max-width: 450px;
+    margin: auto;
+    padding: 20px 0px 20px 0px;
+}
+
+img#segunda-imagem{
+    display: block;
+    max-width: 350px;
+    margin: auto;
+    padding: 20px 0px 20px 0px;
+}
+
+header{
+    background-image: linear-gradient(to right, var(--cor5), var(--cor3));
+    margin: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+    font-family: 'super-mario-title', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+nav{
+    background-image: linear-gradient(to right, var(--cor5), var(--cor3));
+    padding: 0px 0px 5px 0px;
+}
+
+nav > a{
+    margin: auto;
+    padding: 5px 10px 5px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+nav > a:hover{
+    transition-duration: 0.4s;
+    background-color: var(--cor3);
+    color: var(--cor1);
+    border-radius: 10px;
+}
+
+main{
+    background-color: white;
+    max-width: 800px;
+    margin: auto;
+    min-width: 300px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 6px 4px rgb(0 0 0 / 12%);
+}
+
+div{
+    margin: auto;
+}
+
+footer{
+    margin-top: 20px;
+    
+    background-color: white;
+    color: black;
+}
+
+footer > p{
+    text-align: center;
+    padding: 0px;
+}
